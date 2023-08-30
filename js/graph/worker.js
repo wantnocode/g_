@@ -55,7 +55,7 @@ onmessage = function(event) {
       // .force("link", d3.forceLink(links).distance(30).strength(0.3))
       // defaults strength: Math.min(count(link.source), count(link.target));
       // default distance 30
-      .force("link", d3.forceLink(layout_links))
+      .force("link", d3.forceLink(layout_links).distance(30).strength(0.8))
       // .force("link", d3.forceLink(links))
 
       
